@@ -23,7 +23,7 @@ namespace :gioco do
                       raise 'There is another badge with this name related with this kind'
                     end\n"
       if arg_default
-        badge_string = badge_string + 'resources = #{@model_name.capitalize}.find(:all)\n'
+        badge_string = badge_string + 'resources = #{@model_name.capitalize}.all\n'
         badge_string = badge_string + "resources.each do |r|
         #{
         if options[:points] && options[:kinds]
