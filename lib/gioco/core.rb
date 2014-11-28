@@ -27,7 +27,7 @@ class Gioco
 
       Badge.transaction do
           if KINDS && kind
-          resource.points << Point.create({ :kind_id => kind.id, :value => new_pontuation })
+          resource.points << Point.create({ :kind_id => kind.id, :value => new_pontuation }, without_protection: true)
         elsif POINTS
           resource.update_attribute( :points, points )
         end
