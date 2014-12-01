@@ -1,7 +1,7 @@
 ![Alt text](http://giocoapp.github.io/gioco/assets/images/logo.png "A gamification gem for Ruby on Rails applications")
 
-# Gioco (current version - 1.1.1)
-A **gamification** gem to Ruby on Rails applications that use Active Record.
+# Gioco (current version - 1.1.2)
+A **gamification** gem to Ruby on Rails applications that use Active Record. This version is adjusted for **Rails 4.1**.
 
 [![Dependency
 Status](https://gemnasium.com/joaomdmoura/gioco.png)](https://gemnasium.com/joaomdmoura/gioco)
