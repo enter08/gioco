@@ -27,7 +27,7 @@ namespace :gioco do
         badge_string = badge_string + "resources.each do |r|
         #{
         if options[:points] && options[:kinds]
-            "r.points  << Point.create({ :kind_id => kinds.id, :value => \'\#\{args.points\}\'}, without_protection: true)"
+            "r.points  << Point.create({ :kind_id => kind.id, :value => \'\#\{args.points\}\'}, without_protection: true)"
         elsif options[:points]
           "r.points = \'\#\{args.points\}\'"
         end
